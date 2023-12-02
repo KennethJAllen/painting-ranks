@@ -1,4 +1,5 @@
 '''Calculates the rank of Piet Mondrian paintings.'''
+import os
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -19,7 +20,7 @@ def get_rank_from_singular_values(singular_values: np.ndarray) -> int:
     first_singular_value = singular_values[0]
     if first_singular_value <= 0:
         raise ValueError('The first singular value must be positive.')
-    
+
     rank_threshold = 0.05
     scaled_singular_values = singular_values/singular_values[0]
     for index, singular_value in enumerate(scaled_singular_values):
@@ -37,10 +38,23 @@ def plot_singular_values(singular_values: np.ndarray) -> None:
     plt.ylabel('singular values')
     plt.show()
 
+def get_image_file_names():
+    directory = 'piet_mondrian_painting_ranks/piet_mondrian_paintings'
+    file_names = []
+    for file in os.listdir(directory):
+        filename = os.fsdecode(file)
+        if filename.endswith(".jpg"):
+            file_names.append(os.path.join(directory, filename))
+            #print(filename)
+    return file_names
+
 img_filepath = 'piet_mondrian_painting_ranks/piet_mondrian_paintings/1935 piet mondrian composition in black and white with blue square.jpg'
 rank = get_image_rank(img_filepath) # true rank is 3
-print(rank)
+#print(rank)
 
+print(get_image_file_names())
+
+###################################################
 example_array = np.array([[1, 0, 1, 1, 1],
                           [0, 0, 0, 0, 0],
                           [1, 0, 1, 1, 1],
@@ -50,5 +64,5 @@ example_array = np.array([[1, 0, 1, 1, 1],
                           [1, 0, 2, 0, 1],
                           [1, 0, 0, 0, 1],
                           [1, 0, 1, 0, 1]])
-print(np.linalg.matrix_rank(example_array))
+#print(np.linalg.matrix_rank(example_array))
 
