@@ -38,21 +38,35 @@ def plot_singular_values(singular_values: np.ndarray) -> None:
     plt.ylabel('singular values')
     plt.show()
 
-def get_image_file_names():
+def get_image_file_paths():
     directory = 'piet_mondrian_painting_ranks/piet_mondrian_paintings'
-    file_names = []
+    image_file_paths = []
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
         if filename.endswith(".jpg"):
-            file_names.append(os.path.join(directory, filename))
-            #print(filename)
-    return file_names
+            image_file_paths.append(os.path.join(directory, filename))
+    return image_file_paths
 
-img_filepath = 'piet_mondrian_painting_ranks/piet_mondrian_paintings/1935 piet mondrian composition in black and white with blue square.jpg'
-rank = get_image_rank(img_filepath) # true rank is 3
-#print(rank)
+def get_image_ranks():
+    image_file_paths = get_image_file_paths()
+    ranks = []
+    for image_file_path in image_file_paths:
+        rank = get_image_rank(image_file_path)
+        ranks.append(rank)
+    return ranks
 
-print(get_image_file_names())
+def histogram_plot_ranks(ranks):
+    plt.hist(ranks)
+    plt.ylabel('Frequency')
+    plt.xlabel('Rank')
+    plt.xticks(ranks)
+    plt.savefig('painting_ranks.png')
+    plt.show()
+
+#example_img_filepath = 'piet_mondrian_painting_ranks/piet_mondrian_paintings/1935 piet mondrian composition in black and white with blue square.jpg'
+#rank = get_image_rank(example_img_filepath) # true rank is 3
+ranks = get_image_ranks()
+histogram_plot_ranks(ranks)
 
 ###################################################
 example_array = np.array([[1, 0, 1, 1, 1],
@@ -65,4 +79,3 @@ example_array = np.array([[1, 0, 1, 1, 1],
                           [1, 0, 0, 0, 1],
                           [1, 0, 1, 0, 1]])
 #print(np.linalg.matrix_rank(example_array))
-
