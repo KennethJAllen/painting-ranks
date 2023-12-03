@@ -28,18 +28,21 @@ def get_rank_from_singular_values(singular_values: np.ndarray) -> int:
             return index
 
 def get_image_rank(img_filepath: str) -> int:
+    '''Returns the rank of an image as a matrix located at img_filepath.'''
     img_array = get_image_array(img_filepath)
     singular_values = compute_svd(img_array)
     rank = get_rank_from_singular_values(singular_values)
     return rank
 
 def plot_singular_values(singular_values: np.ndarray) -> None:
+    '''Generates plot of list of singular values.'''
     plt.plot(singular_values)
     plt.ylabel('singular values')
     plt.show()
 
-def get_image_file_paths():
-    directory = 'piet_mondrian_painting_ranks/piet_mondrian_paintings'
+def get_image_file_paths() -> list[str]:
+    '''Gets a list of file paths for images in the specified directory.'''
+    directory = 'piet_mondrian_painting_ranks/paintings'
     image_file_paths = []
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
@@ -55,7 +58,8 @@ def get_image_ranks():
         ranks.append(rank)
     return ranks
 
-def histogram_plot_ranks(ranks):
+def histogram_plot_ranks(ranks: list[int]) -> None:
+    '''Generates and saves historgram from list of ints.'''
     plt.hist(ranks)
     plt.ylabel('Frequency')
     plt.xlabel('Rank')
@@ -63,10 +67,10 @@ def histogram_plot_ranks(ranks):
     plt.savefig('painting_ranks.png')
     plt.show()
 
-#example_img_filepath = 'piet_mondrian_painting_ranks/piet_mondrian_paintings/1935 piet mondrian composition in black and white with blue square.jpg'
+#example_img_filepath = 'piet_mondrian_painting_ranks/paintings/1935 piet mondrian composition in black and white with blue square.jpg'
 #rank = get_image_rank(example_img_filepath) # true rank is 3
-ranks = get_image_ranks()
-histogram_plot_ranks(ranks)
+painting_ranks = get_image_ranks()
+histogram_plot_ranks(painting_ranks)
 
 ###################################################
 example_array = np.array([[1, 0, 1, 1, 1],
