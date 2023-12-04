@@ -1,21 +1,55 @@
-id,artist,painting name,file name,year,rank
-1,,,,,
-2,,,,,
-3,,,,,
-4,,,,,
-5,,,,,
-6,,,,,
-7,,,,,
-8,,,,,
-9,,,,,
-10,,,,,
-11,,,,,
-12,,,,,
-13,,,,,
-14,,,,,
-15,,,,,
-16,,,,,
-17,,,,,
-18,,,,,
-19,,,,,
-20,,,,,
+year,artist,painting name,rank,file name
+1917,Piet Mondrian,,,1917 composition-in-color-a-1917.jpg
+1917,Piet Mondrian,,,1917 composition-with-color-planes.jpg
+1918,Piet Mondrian,,,1918 composition-with-gray-and-light-brown-1918.jpg
+1918,Piet Mondrian,,,1918 piet-mondrian-composition-avec-grille-2.jpg
+1919,Piet Mondrian,,,1919 composition-checkerboard-dark-colors.jpg
+1919,Piet Mondrian,,,1919 composition-light-color-planes-with-grey-contours-1919.jpg
+1919,Piet Mondrian,,,1919 composition-with-grid-ix-1919.jpg
+1920,Piet Mondrian,,,1920 composition-a-1923.jpg
+1920,Piet Mondrian,,,1920 composition-with-red-blue-and-yellow-green.jpg
+1920,Piet Mondrian,,,1920 piet-mondrian-composition-i.jpg
+1921,Piet Mondrian,,,1921 composition-with-large-red-plane-yellow-black-gray-and-blue.jpg
+1921,Piet Mondrian,,,1921 piet-mondrian-tableau-no.-1.jpg
+1921,Piet Mondrian,,,1921 tableau-3-with-orange-red-yellow-black-blue-and-gray.jpg
+1921,Piet Mondrian,,,1921 tableau-i.jpg
+1922,Piet Mondrian,,,1922 composition-2-1922.jpg
+1922,Piet Mondrian,,,1922 composition-with-red-yellow-and-blue-1922.jpg
+1922,Piet Mondrian,,,"1922 piet-mondrian-composition-avec-bleu,-rouge,-jaune-et-noir.jpg"
+1922,Piet Mondrian,,,"1922 piet-mondrian-composition-with-blue,-yellow,-red-and-grey.jpg"
+1926,Piet Mondrian,,,"1926 piet-mondrian-composition-ii,-with-red.jpg"
+1927,Piet Mondrian,,,"1927 piet-mondrian-composition -no.-ii,-with-yellow,-red-and-blue.jpg"
+1927,Piet Mondrian,,,"1927 piet-mondrian-composition-iii-avec-rouge,-jaune-et-bleu.jpg"
+1927,Piet Mondrian,,,"1927 piet-mondrian-composition-no.-i,-black,-yellow-and-blue,-1927.jpg"
+1927,Piet Mondrian,,,"1927 piet-mondrian-composition-with-red,-blue-and-grey.jpg"
+1927,Piet Mondrian,,,"1927 piet-mondrian-composition-with-red,-yellow-and-blue.jpg"
+1927,Piet Mondrian,,,1927 piet-mondrian-composition-with-yellow-and-red.jpg
+1929,Piet Mondrian,,,1929 piet-mondrian-composition-no.-iii.jpg
+1930,Piet Mondrian,,,1930 composition-with-red-blue-and-yellow-1930.jpg
+1930,Piet Mondrian,,,1930 composition-with-yellow-patch-1930.jpg
+1930,Piet Mondrian,,,1930 piet-mondrian-composition-no.-ii-with-blue-and-yellow.jpg
+1931,Piet Mondrian,,,1931 composition-n-i-with-red-and-blue-1931.jpg
+1931,Piet Mondrian,,,1931 piet-mondrian-composition-avec-bleu-et-jaune.jpg
+1931,Piet Mondrian,,,"1931 piet-mondrian-composition-with-red,-black-and-white.jpg"
+1932,Piet Mondrian,,,1932 piet-mondrian-composition-c-with-red-and-grey.jpg
+1934,Piet Mondrian,,,"1934 piet-mondrian-composition-in-black-and-white,-with-double-lines.jpg"
+1935,Piet Mondrian,,,1935 composition-c.jpg
+1935,Piet Mondrian,,,1935 piet mondrian composition in black and white with blue square.jpg
+1935,Piet Mondrian,,,"1935 piet-mondrian-composition-a,-with-double-line-and-yellow.jpg"
+1936,Piet Mondrian,,,1936 composition-iii-with-blue-yellow-and-white-1936.jpg
+1936,Piet Mondrian,,,1936 composition-with-red-and-black.jpg
+1936,Piet Mondrian,,,1936 piet-mondrian-composition-(a)-en-rouge-et-blanc.jpg
+1936,Piet Mondrian,,,"1936 piet-mondrian-composition-in-white,-blue,-and-yellow -c.jpg"
+1936,Piet Mondrian,,,1936 vertical-composition-with-blue-and-white-1936.jpg
+1937,Piet Mondrian,,,1937 composition-with-blue-1937.jpg
+1939,Piet Mondrian,,,1939 Composition with red and blue.jpg
+1939,Piet Mondrian,,,1939 Composition.jpg
+1939,Piet Mondrian,,,1939 trafalgar-square.jpg
+1940,Piet Mondrian,,,1940 composition-london.jpg
+1941,Piet Mondrian,,,1941 New YorkBoogie Woogie.jpg
+1942,Piet Mondrian,,,1942 broadway-boogie-woogie.jpg
+1942,Piet Mondrian,,,1942 composition-no-10-1942.jpg
+1942,Piet Mondrian,,,1942 composition-no-iii-blanc-jaune-1942.jpg
+1942,Piet Mondrian,,,1942 composition-with-red-yellow-and-blue.jpg
+1942,Piet Mondrian,,,1942 new-york-city-1.jpg
+1943,Piet Mondrian,,,1943 place-de-la-concorde-1943.jpg
